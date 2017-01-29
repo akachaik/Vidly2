@@ -69,7 +69,7 @@ namespace Vidly2.Controllers.Api
 
             _context.SaveChanges();
 
-            return null;
+            return Ok();
 
         }
 
@@ -83,9 +83,7 @@ namespace Vidly2.Controllers.Api
             _context.Customers.Remove(customerInDb);
             _context.SaveChanges();
 
-            return null;
+            return Ok();
         }
-
-
     }
 }
