@@ -1,0 +1,17 @@
+﻿@model Customer
+
+@{
+    ViewBag.Title = "Custemer Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Custemer Details</h2>
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (Model.Birthdate.HasValue)
+    {
+        <li>
+            Birthdate: @Model.Birthdate.ToString()
+        </li>
+    }
+</ul>
